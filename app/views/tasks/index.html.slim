@@ -1,0 +1,10 @@
+section.container.pt-5
+  .row
+    .col-6
+      .card
+        .card-header やること
+        = render 'tasks/task_list', tasks: @tasks.unfinished
+    .col-6
+      .card
+        .card-header やったこと
+        = render 'tasks/task_list', tasks: @tasks.finished

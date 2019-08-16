@@ -1,0 +1,5 @@
+ul.list-group.list-group-flush.px-3
+  - tasks.each do |task|
+    li.list-group-item
+      input.form-check-input(:id="task-checkbox-#{task.id}" type="checkbox")
+      label(:for="task-checkbox-#{task.id}")= task.title
