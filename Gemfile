@@ -11,6 +11,8 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'turbolinks'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootstrap'
+gem 'jquery-rails'
 gem 'slim'
 
 group :development, :test do
