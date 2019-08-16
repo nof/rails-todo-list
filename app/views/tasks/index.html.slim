@@ -3,8 +3,10 @@ section.container.pt-5
     .col-6
       .card
         .card-header やること
-        = render 'tasks/task_list', tasks: @tasks.unfinished
+        #js-unfinished-task-list
+          = render 'tasks/task_list', tasks: @tasks.unfinished
     .col-6
       .card
         .card-header やったこと
-        = render 'tasks/task_list', tasks: @tasks.finished
+        #js-finished-task-list
+          = render 'tasks/task_list', tasks: @tasks.finished

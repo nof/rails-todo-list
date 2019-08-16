@@ -1,5 +1,5 @@
 ul.list-group.list-group-flush.px-3
   - tasks.each do |task|
     li.list-group-item
-      input.form-check-input(:id="task-checkbox-#{task.id}" type="checkbox")
-      label(:for="task-checkbox-#{task.id}")= task.title
+      input.form-check-input.js-task-checkbox(id="task-checkbox-#{task.id}" type="checkbox" checked=(task.finished?) data-url="#{task_finish_state_path(task)}")
+      label(for="task-checkbox-#{task.id}")= task.title

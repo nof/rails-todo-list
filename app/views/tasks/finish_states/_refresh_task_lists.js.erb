@@ -1,0 +1,2 @@
+$('#js-unfinished-task-list').html('<%= j render 'tasks/task_list', tasks: Task.default_order.unfinished %>')
+$('#js-finished-task-list').html('<%= j render 'tasks/task_list', tasks: Task.default_order.finished %>')
